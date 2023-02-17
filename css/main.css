@@ -1,0 +1,111 @@
+/*
+Main Text Colour: Black (#000000)
+Secondary Text Colour: White (#FFFFFF)
+Background Colour: #658091
+Accent and Interactive Colour: Dark Blue #004489
+Main Colour: Blue #0060AA
+Font Family: "Open Sans",sans-serif
+
+*/
+
+:root {
+    --maintext: gray;
+    --secondarytext: white;
+    --backgroundcolor: #4BA2CF;
+    --accent: #004489;
+    --maincolor: #0060AA;
+}
+
+body {
+    background-color: var(--backgroundcolor);
+}
+
+header {
+    background-color: var(--secondarytext);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: "Open Sans",sans-serif;
+    color: var(--maintext);
+}
+
+h1 {
+    font-size: 36pt;
+}
+
+h3 {
+    font-size: 24pt;
+}
+
+p {
+    font-size: 12pt;
+}
+
+main {
+    background-color: var(--secondarytext);
+    border-radius: 10px;
+}
+
+aside {
+    background-color: var(--secondarytext);
+    border-radius: 10px;
+}
+
+footer {
+    background-color: var(--maincolor);
+    color: white;
+    border-radius: 10px;
+}
+
+nav li {
+    border: 2px solid;
+    border-color: #004489;
+    background-color: var(--maincolor);
+    list-style-type: none;
+}
+
+nav li a {
+    color: var(--secondarytext);
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: var(--accent);
+}
+
+.active {
+    background-color: var(--accent);
+}
+
+table {
+    font-family: "Open Sans",sans-serif;
+    border-collapse: collapse;
+}
+
+table td, table th {
+    border: 2px solid #F0F0F0;
+}
+
+table tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+table tr:hover {
+    background-color: var(--backgroundcolor);
+}
+
+table th {
+    background-color: var(--maintext);
+    color: white;
+}
+
+.banner {
+    height: 600px;
+    width: 1200px;
+    position: absolute;
+    display: block;
+    z-index: -5;
+}
