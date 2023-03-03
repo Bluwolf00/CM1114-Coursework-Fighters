@@ -12,8 +12,8 @@ Font Family: "Open Sans",sans-serif
     --maintext: gray;
     --secondarytext: white;
     --backgroundcolor: #4BA2CF;
-    --accent: #004489;
-    --maincolor: #0060AA;
+    --accent: #e70aa5;
+    --maincolor: #06aa00;
 }
 
 body {
@@ -24,23 +24,12 @@ header {
     background-color: var(--secondarytext);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    padding: 16px;
-    margin: 1em;
-}
-
-header h1{
-    display: inline;
-}
-
-#logo {
-    width: 50px;
-    height: 50px;
-    float: left;
-    margin-right: 10px;
+    padding: 5%;
+    margin: 3%;
+    border-color: var(--accent);
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    padding: 10px;
     font-family: "Open Sans",sans-serif;
     color: var(--maintext);
 }
@@ -73,20 +62,11 @@ footer {
     border-radius: 10px;
 }
 
-nav ul {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
 nav li {
-    border: 2px solid var(--accent);
+    border: 2px solid;
+    border-color: #004489;
     background-color: var(--maincolor);
     list-style-type: none;
-    float: left;
-    width: 15%;
-    padding: 16px;
-    text-align: center;
 }
 
 nav li a {
@@ -106,10 +86,15 @@ nav li:hover {
 table {
     font-family: "Open Sans",sans-serif;
     border-collapse: collapse;
+    border-radius: 15px;
+    border-color: var(--maincolor);
+    border-style: dotted;
 }
 
 table td, table th {
     border: 2px solid #F0F0F0;
+    border-style: dashed;
+    border-color: var(--accent);
 }
 
 table tr:nth-child(even) {
@@ -125,14 +110,6 @@ table th {
     color: white;
 }
 
-fieldset {
-    display: inline;
-}
-
-main {
-    overflow: auto;
-}
-
 .gallery {
     width: 30.33%;
     /*height: 12em;*/
@@ -146,15 +123,4 @@ main {
     position: absolute;
     display: block;
     z-index: -5;
-}
-
-#left-col {
-    display: inline-flex;
-    padding: 10px;
-}
-
-#right-col {
-    float: right;
-    display: inline-flex;
-    padding: 10px;    
 }
