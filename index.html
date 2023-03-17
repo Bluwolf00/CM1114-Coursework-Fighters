@@ -4,12 +4,36 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css\main.css">
+
+        <style>
+            h1,h2,h3,h4,h5,p {
+                text-align: center;
+            }
+        </style>
     </head>
 
     <body>
+        <script>
+            var counter = 2;
+            function login1() {
+                if (counter % 2 == 0) {
+                    alert('You have been logged in!');
+                } else {
+                    alert('You have been logged out!');
+                }
+                counter += 1;
+            }
+        </script>
         <header>
             <img src="images/Symbol.PNG" alt="Logo" id="logo">
             <h1>The Maverick Society</h1>
+            <form style="float: right;">
+                <fieldset>
+                    <input type="text" name="name" value="" placeholder="Email"/>
+                    <input type="password" name="name" value="" placeholder="Password" />
+                    <button type="button" name="login" onclick="login1()">Login</button>
+                </fieldset>
+            </form>
         </header>
 
         <nav>
@@ -23,7 +47,7 @@
         </nav>
 
         <main>
-            <div>
+            <div style="text-align: center;">
                 <h1>Welcome to The Maverick Society!</h1>
                 <h3>A collaborative group for military aviation enthusiasts</h3>
             </div>
@@ -75,6 +99,9 @@
         <aside>
             <h3>
                 Latest Tweets
+                <div style="text-align: center;">
+                    <a class="twitter-timeline" data-width="1000" data-height="1000" href="https://twitter.com/eagledynamics?ref_src=twsrc%5Etfw">Tweets by eagledynamics</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
             </h3>
         </aside>
 

@@ -2,6 +2,7 @@
     <head>
         <title>Maverick Society</title>
         <link rel="stylesheet" href="css\main.css">
+        <script type="text/javascript" src="scripts/scripts.js"></script>
     </head>
 
     <body>
@@ -40,9 +41,15 @@
                         <label for="member">Non-Member:</label>
                         <input type="radio" name="memberType" value=""/> <br/>
                         <br/>
-                        <input type="button" name="submitButton" value="Submit"/>
+                        <button type="button" onclick='send_form("form_outcome", "The form was sent successfully!")'>Submit</button>
                     </fieldset>
                 </form>
+
+                <div style="position: absolute; transform: translate(0px, 10em);">
+                    <p id="form_outcome">
+
+                    </p>
+                </div>
             </div>
 
             <div id="right-col">

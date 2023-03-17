@@ -23,27 +23,28 @@
         </nav>
 
         <main>
+
             <div id="img-gallery" class="container">
                 <div class="row">
                     <div class="col-sm">
-                        <img src="images/F-14Tomcat.jpg" alt="F-14 Tomcat" class="gallery-img"/>
+                        <img id="img-gal-1" src="images/F-14Tomcat.jpg" alt="F-14 Tomcat" class="gallery-img"/>
                     </div>
                     <div class="col-sm">
-                        <img src="images/F-16_June_2008.jpg" alt="F-16 Fighting Falcon" class="gallery-img"/>
+                        <img id="img-gal-2" src="images/F-16_June_2008.jpg" alt="F-16 Fighting Falcon" class="gallery-img"/>
                     </div>
                     <div class="col-sm">
-                        <img src="images/ButtonBox.png" alt="Button Box" class="gallery-img"/>
+                        <img id="img-gal-3" src="images/ButtonBox.png" alt="Button Box" class="gallery-img"/>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm">
-                        <img src="images/Gripen.jpg" alt="JAS 39 Gripen" class="gallery-img"/>
+                        <img id="img-gal-4" src="images/Gripen.jpg" alt="JAS 39 Gripen" class="gallery-img"/>
                     </div>
                     <div class="col-sm">
-                        <img src="images/HOTAS.jpg" alt="Warthog HOTAS" class="gallery-img"/>
+                        <img id="img-gal-5" src="images/HOTAS.jpg" alt="Warthog HOTAS" class="gallery-img"/>
                     </div>
                     <div class="col-sm">
-                        <img src="images/Mig27.jpg" alt="Mig-27 Flogger" class="gallery-img"/>
+                        <img id="img-gal-6" src="images/Mig27.jpg" alt="Mig-27 Flogger" class="gallery-img"/>
                     </div>
                 </div>
             </div>
@@ -52,5 +53,63 @@
         <aside> </aside>
 
         <footer>Copyright Alex Carnegie</footer>
+
+        <script>
+            function delight() {
+                document.getElementById("img-gal-1").style="border: none;"
+            }
+            function highlight() {
+                document.getElementById("img-gal-1").style="border: solid blue 2px;"
+            }
+            function delight2() {
+                document.getElementById("img-gal-2").style="border: none;"
+            }
+            function highlight2() {
+                document.getElementById("img-gal-2").style="border: solid blue 2px;"
+            }
+            function delight3() {
+                document.getElementById("img-gal-3").style="border: none;"
+            }
+            function highlight3() {
+                document.getElementById("img-gal-3").style="border: solid blue 2px;"
+            }
+            function delight4() {
+                document.getElementById("img-gal-4").style="border: none;"
+            }
+            function highlight4() {
+                document.getElementById("img-gal-4").style="border: solid blue 2px;"
+            }
+            function delight5() {
+                document.getElementById("img-gal-5").style="border: none;"
+            }
+            function highlight5() {
+                document.getElementById("img-gal-5").style="border: solid blue 2px;"
+            }
+            function delight6() {
+                document.getElementById("img-gal-6").style="border: none;"
+            }
+            function highlight6() {
+                document.getElementById("img-gal-6").style="border: solid blue 2px;"
+            }
+            
+            document.getElementById("img-gal-1").addEventListener("mouseout", delight);
+            document.getElementById("img-gal-1").addEventListener("mouseover", highlight);
+
+            document.getElementById("img-gal-2").addEventListener("mouseout", delight2);
+            document.getElementById("img-gal-2").addEventListener("mouseover", highlight2);
+
+            document.getElementById("img-gal-3").addEventListener("mouseout", delight3);
+            document.getElementById("img-gal-3").addEventListener("mouseover", highlight3);
+            
+            document.getElementById("img-gal-4").addEventListener("mouseout", delight4);
+            document.getElementById("img-gal-4").addEventListener("mouseover", highlight4);
+
+            document.getElementById("img-gal-5").addEventListener("mouseout", delight5);
+            document.getElementById("img-gal-5").addEventListener("mouseover", highlight5);
+
+            document.getElementById("img-gal-6").addEventListener("mouseout", delight6);
+            document.getElementById("img-gal-6").addEventListener("mouseover", highlight6);
+
+        </script>
     </body>
 </html>
