@@ -1,17 +1,36 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <!-- Set title, import Bootstrap & Main css file -->
         <title>Maverick Society</title>
-        <link rel="stylesheet" href="css\main.css">
-        <script type="text/javascript" src="scripts/scripts.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="scripts/scripts.js"></script>
+
+        <style>
+            #left-col {
+                display: inline-flex;
+                padding: 10px;
+            }
+
+            #right-col {
+                float: right;
+                display: inline-flex;
+                padding: 10px;    
+            }
+        </style>
     </head>
 
     <body>
         <header>
+            <!-- Website Logo & Webpage Title -->
             <img src="images/Symbol.PNG" alt="Logo" id="logo">
             <h1>The Maverick Society</h1>
             <!--<img src="images\jets.avif" alt="Jets Banner" class="banner"> -->
         </header>
 
+        <!-- Navigation Bar -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -25,26 +44,29 @@
         <main>
             <h2>Use this page to contact us</h2>
             <div id="left-col">
+                <!-- Create Contact Us Form -->
                 <form>
                     <fieldset>
                         <legend>Contact Us using the below form.</legend>
 
-                        <label for="name">Name: </label>
-                        <input type="text" name="name" value=""/> <br/>
-                        <label for="email">Email: </label>
-                        <input type="text" name="email" value=""/> <br/>
-                        <label for="discordT">Discord Handle: </label>
-                        <input type="text" name="discordT" value=""/> <br/>
-                        <label for="memberType">Membership:  </label>
-                        <label for="member">Member:</label>
-                        <input type="radio" name="memberType" value=""/>
-                        <label for="member">Non-Member:</label>
-                        <input type="radio" name="memberType" value=""/> <br/>
-                        <br/>
+                        <label id="nameField" for="nameF">Name: </label>
+                        <input id="nameF" type="text" name="name" value="" aria-labelledby="nameField"> <br>
+                        <label id="emailField" for="emailF">Email: </label>
+                        <input id="emailF" type="text" name="emailF" value="" aria-labelledby="emailField"> <br>
+                        <label id="discordField" for="discordF">Discord Handle: </label>
+                        <input id="discordF" type="text" name="discordF" value="" aria-labelledby="discordField"> <br>
+                        <label> Membership:  </label>
+                        <label id="memberField" for="member">Member:</label>
+                        <input id="member" type="radio" name="memberType" value="" aria-labelledby="memberField">
+                        <label id="nonmemberField" for="nonmember">Non-Member:</label>
+                        <input id="nonmember" type="radio" name="nmemberType" value="" aria-labelledby="nonmemberField"> <br>
+                        <br>
                         <button type="button" onclick='send_form("form_outcome", "The form was sent successfully!")'>Submit</button>
                     </fieldset>
                 </form>
 
+
+                <!-- Position form confirmation below the form rather than inline with it -->
                 <div style="position: absolute; transform: translate(0px, 10em);">
                     <p id="form_outcome">
 
@@ -53,7 +75,7 @@
             </div>
 
             <div id="right-col">
-                <a class="twitter-timeline" data-width="300" data-height="600" data-theme="light" href="https://twitter.com/eagledynamics?ref_src=twsrc%5Etfw">Tweets by eagledynamics</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <a class="twitter-timeline" data-width="300" data-height="600" data-theme="light" href="https://twitter.com/eagledynamics?ref_src=twsrc%5Etfw">Tweets by eagledynamics</a> <script async src="https://platform.twitter.com/widgets.js"></script>
             </div>
             
         </main>

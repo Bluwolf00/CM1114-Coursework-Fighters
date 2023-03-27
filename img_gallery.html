@@ -1,17 +1,21 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <!-- Set title, import Bootstrap & Main css file -->
         <title>Maverick Society</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css\main.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
 
     <body>
         <header>
+            <!-- Website Logo & Webpage Title -->
             <img src="images/Symbol.PNG" alt="Logo" id="logo">
             <h1>The Maverick Society</h1>
         </header>
 
+        <!-- Navigation Bar -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -23,28 +27,28 @@
         </nav>
 
         <main>
-
+            <!-- Create image gallery in a grid form 3-wide -->
             <div id="img-gallery" class="container">
                 <div class="row">
                     <div class="col-sm">
-                        <img id="img-gal-1" src="images/F-14Tomcat.jpg" alt="F-14 Tomcat" class="gallery-img"/>
+                        <img id="img-gal-1" src="images/F-14Tomcat.jpg" alt="F-14 Tomcat" class="gallery-img">
                     </div>
                     <div class="col-sm">
-                        <img id="img-gal-2" src="images/F-16_June_2008.jpg" alt="F-16 Fighting Falcon" class="gallery-img"/>
+                        <img id="img-gal-2" src="images/F-16_June_2008.jpg" alt="F-16 Fighting Falcon" class="gallery-img">
                     </div>
                     <div class="col-sm">
-                        <img id="img-gal-3" src="images/ButtonBox.png" alt="Button Box" class="gallery-img"/>
+                        <img id="img-gal-3" src="images/ButtonBox.png" alt="Button Box" class="gallery-img">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm">
-                        <img id="img-gal-4" src="images/Gripen.jpg" alt="JAS 39 Gripen" class="gallery-img"/>
+                        <img id="img-gal-4" src="images/Gripen.jpg" alt="JAS 39 Gripen" class="gallery-img">
                     </div>
                     <div class="col-sm">
-                        <img id="img-gal-5" src="images/HOTAS.jpg" alt="Warthog HOTAS" class="gallery-img"/>
+                        <img id="img-gal-5" src="images/HOTAS.jpg" alt="Warthog HOTAS" class="gallery-img">
                     </div>
                     <div class="col-sm">
-                        <img id="img-gal-6" src="images/Mig27.jpg" alt="Mig-27 Flogger" class="gallery-img"/>
+                        <img id="img-gal-6" src="images/Mig27.jpg" alt="Mig-27 Flogger" class="gallery-img">
                     </div>
                 </div>
             </div>
@@ -54,6 +58,7 @@
 
         <footer>Copyright Alex Carnegie</footer>
 
+        <!-- Define functions to highlight each image and assign to eventListener on mouse over -->
         <script>
             function delight() {
                 document.getElementById("img-gal-1").style="border: none;"

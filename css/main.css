@@ -8,8 +8,9 @@ Font Family: "Open Sans",sans-serif
 
 */
 
+/* Define colour constants to centralise the theme */
 :root {
-    --maintext: gray;
+    --maintext: rgb(90, 90, 90);
     --secondarytext: white;
     --backgroundcolor: #4BA2CF;
     --accent: #004489;
@@ -112,7 +113,7 @@ nav li:hover {
 }
 
 table {
-    font-family: "Open Sans",sans-serif;
+    font-family: "Open Sans","sans-serif";
     border-collapse: collapse;
 }
 
@@ -162,24 +163,15 @@ main {
     z-index: -5;
 }
 
+/* Main 'Heading' for Text on carousel */
 .carousel-headcaptions {
     color: var(--secondarytext);
     text-shadow: 1px 1px 2px black;
 }
 
+/* Main Text for carousel caption */
 .carousel-caption {
     position: absolute;
     bottom: 35%;
     transform: translate(5%,0);
-}
-
-#left-col {
-    display: inline-flex;
-    padding: 10px;
-}
-
-#right-col {
-    float: right;
-    display: inline-flex;
-    padding: 10px;    
 }
