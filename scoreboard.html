@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Set title, import Bootstrap & Main css file -->
+        <title>Maverick Society</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/main.css">
+
+        <style>
+            table tr:hover {
+                background-color: var(--backgroundcolor);
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <!-- Website Logo & Webpage Title -->
+            <img src="images/Symbol.PNG" alt="Logo" id="logo">
+            <h1>The Maverick Society</h1>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="current_members.html">Roster</a></li>
+                <li><a href="img_gallery.html">Gallery</a></li>
+                <li><a href="event_calender.html">Calender</a></li>
+                <li class="active"><a href="scoreboard.html">Scoreboard</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div>
+                <h3>This scoreboard is for tracking the most effective players on our Community DCS Server!</h3>
+                <p style="padding-left: 10px;">This includes the name, hours recorded flying, aerial kills, ground kills and their most used airframe</p>
+            </div>
+
+            <div>
+                <table class="table table-striped table-hover table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Position #</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Hours Played</th>
+                            <th scope="col">Aerial Targets</th>
+                            <th scope="col">Ground Targets</th>
+                            <th scope="col">Prefered Airframe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Kerry</td>
+                            <td>300</td>
+                            <td>74</td>
+                            <td>33</td>
+                            <td>Su-33</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Alex</td>
+                            <td>140</td>
+                            <td>40</td>
+                            <td>21</td>
+                            <td>F-16</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Alehandro</td>
+                            <td>60</td>
+                            <td>11</td>
+                            <td>40</td>
+                            <td>A-10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Miller</td>
+                            <td>32</td>
+                            <td>5</td>
+                            <td>28</td>
+                            <td>Su-25</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </body>
+
+    <aside>
+
+    </aside>
+
+    <footer>Copyright Alex Carnegie</footer>
+
+</html>

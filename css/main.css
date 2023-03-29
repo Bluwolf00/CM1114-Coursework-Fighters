@@ -44,10 +44,14 @@ header h1{
     margin-right: 10px;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6 {
     padding: 10px;
     font-family: "Open Sans",sans-serif;
     color: var(--maintext);
+}
+
+p {
+    color: black;
 }
 
 h1 {
@@ -88,13 +92,18 @@ nav ul {
     overflow: hidden;
 }
 
+nav {
+    
+}
+
 nav li {
     border: 2px solid var(--accent);
     background-color: var(--maincolor);
     list-style-type: none;
     float: left;
-    width: 15%;
-    padding: 16px;
+    width: 12.5%;
+    padding-top: 16px;
+    padding-bottom: 16px;
     text-align: center;
 }
 
@@ -110,28 +119,6 @@ nav li:hover {
 
 .active {
     background-color: var(--accent);
-}
-
-table {
-    font-family: "Open Sans","sans-serif";
-    border-collapse: collapse;
-}
-
-table td, table th {
-    border: 2px solid #F0F0F0;
-}
-
-table tr:nth-child(even) {
-    background-color: #F2F2F2;
-}
-
-table tr:hover {
-    background-color: var(--backgroundcolor);
-}
-
-table th {
-    background-color: var(--maintext);
-    color: white;
 }
 
 fieldset {

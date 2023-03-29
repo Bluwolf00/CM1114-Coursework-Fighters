@@ -9,15 +9,17 @@
         <script src="scripts/scripts.js"></script>
 
         <style>
-            #left-col {
-                display: inline-flex;
-                padding: 10px;
+            #form_outcome {
+                margin-top: 1%;
             }
 
-            #right-col {
-                float: right;
-                display: inline-flex;
-                padding: 10px;    
+            fieldset div {
+                margin-bottom: 10px;
+            }
+            fieldset label {
+                display: inline-block;
+                width: 8em;
+                text-align: left;
             }
         </style>
     </head>
@@ -36,51 +38,63 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="current_members.html">Roster</a></li>
                 <li><a href="img_gallery.html">Gallery</a></li>
-                <li><a href="event_calender.html">Calender</a></li>
+                <li><a href="event_calender_new.html">Calender</a></li>
+                <li><a href="scoreboard.html">Scoreboard</a></li>
+                <li><a href="scoreboard.html">Test Page 1</a></li>
+                <li><a href="scoreboard.html">Test Page 2</a></li>
                 <li class="active"><a href="contact_us.html">Contact Us</a></li>
             </ul>
         </nav>
 
         <main>
-            <h2>Use this page to contact us</h2>
-            <div id="left-col">
-                <!-- Create Contact Us Form -->
-                <form>
-                    <fieldset>
-                        <legend>Contact Us using the below form.</legend>
-
-                        <label id="nameField" for="nameF">Name: </label>
-                        <input id="nameF" type="text" name="name" value="" aria-labelledby="nameField"> <br>
-                        <label id="emailField" for="emailF">Email: </label>
-                        <input id="emailF" type="text" name="emailF" value="" aria-labelledby="emailField"> <br>
-                        <label id="discordField" for="discordF">Discord Handle: </label>
-                        <input id="discordF" type="text" name="discordF" value="" aria-labelledby="discordField"> <br>
-                        <label> Membership:  </label>
-                        <label id="memberField" for="member">Member:</label>
-                        <input id="member" type="radio" name="memberType" value="" aria-labelledby="memberField">
-                        <label id="nonmemberField" for="nonmember">Non-Member:</label>
-                        <input id="nonmember" type="radio" name="nmemberType" value="" aria-labelledby="nonmemberField"> <br>
-                        <br>
-                        <button type="button" onclick='send_form("form_outcome", "The form was sent successfully!")'>Submit</button>
-                    </fieldset>
-                </form>
-
-
-                <!-- Position form confirmation below the form rather than inline with it -->
-                <div style="position: absolute; transform: translate(0px, 10em);">
-                    <p id="form_outcome">
-
-                    </p>
-                </div>
-            </div>
-
-            <div id="right-col">
-                <a class="twitter-timeline" data-width="300" data-height="600" data-theme="light" href="https://twitter.com/eagledynamics?ref_src=twsrc%5Etfw">Tweets by eagledynamics</a> <script async src="https://platform.twitter.com/widgets.js"></script>
-            </div>
             
+            <div class="container text-center">
+                <div class="row align-tems-start">
+                    <div class="col">
+                        <h3>Contact Us using the form below</h3>
+                        <!-- Create Contact Us Form -->
+                        <form>
+                            <fieldset>
+                                <legend>We'll get back to you soon!</legend>
+                                <div>
+                                    <label id="nameField" for="nameF">Name: </label>
+                                    <input id="nameF" type="text" name="name" value="" aria-labelledby="nameField"> <br>
+                                </div>
+                                <div>
+                                    <label id="emailField" for="emailF">Email: </label>
+                                    <input id="emailF" type="text" name="emailF" value="" aria-labelledby="emailField"> <br>
+                                </div>
+                                <div>
+                                    <label id="discordField" for="discordF">Discord Handle: </label>
+                                    <input id="discordF" type="text" name="discordF" value="" aria-labelledby="discordField"> <br>
+                                </div>
+                                <div>
+                                    <label> Membership:  </label>
+                                </div>
+                                <div>
+                                    <label id="memberField" for="member">Member:</label>
+                                    <input id="member" type="radio" name="memberType" value="" aria-labelledby="memberField">
+                                </div>
+                                <div>
+                                    <label id="nonmemberField" for="nonmember">Non-Member:</label>
+                                    <input id="nonmember" type="radio" name="nmemberType" value="" aria-labelledby="nonmemberField"> <br>
+                                </div>
+                                <br>
+                                <button type="button" onclick='send_form("form_outcome", "The form was sent successfully!")'>Submit</button>
+                            </fieldset>
+                        </form>
+
+                        <!-- Position form confirmation below the form rather than inline with it -->
+                        <div hidden id="form_outcome" class="alert alert-success" role="alert">
+                        </div>
+                    </div>
+
+                    <div class="col" style="margin-top: 10px; margin-bottom: 10px;">
+                            <a class="twitter-timeline" data-width="800" data-height="600" data-theme="light" href="https://twitter.com/eagledynamics?ref_src=twsrc%5Etfw">Tweets by eagledynamics</a> <script async src="https://platform.twitter.com/widgets.js"></script>
+                    </div>
+                </div>
+            </div>       
         </main>
-
-
     </body>
 
     <footer>Copyright Alex Carnegie</footer>
