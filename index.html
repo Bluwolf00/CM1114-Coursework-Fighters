@@ -1,5 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
+    <!--
+        Threat Model
+
+        Threat Source: External
+        Threat Agent: Human
+        Threat Motivation: Access to unauthorised resources
+        Threat Intention: Intentional
+        Threat Impact: Information disclosure, may obtain access to member emails. Information destruction, may change parts of the website without authorisation.
+        Threat Mitigation: Login validation, 2FA in place before any website elements can be changed.
+    -->
+
     <head>
         <!-- Set title, import Bootstrap & Main css file -->
         <title>Maverick Society</title>
@@ -22,10 +34,10 @@
             <img src="images/Symbol.PNG" alt="Logo" id="logo">
             <h1>The Maverick Society</h1>
             <!-- Login Form -->
-            <form style="float: right;">
+            <form style="float: right;" name="login">
                 <fieldset>
-                    <input type="text" name="name" value="" placeholder="Email">
-                    <input type="password" name="name" value="" placeholder="Password">
+                    <input id="emailF" type="text" name="email" value="" placeholder="Email">
+                    <input id="passwordF" type="password" name="password" value="" placeholder="Password">
                     <button id="loginB" type="button" name="login" onclick="login1()">Log In</button>
                 </fieldset>
             </form>
@@ -37,7 +49,7 @@
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="current_members.html">Roster</a></li>
                 <li><a href="img_gallery.html">Gallery</a></li>
-                <li><a href="event_calender_new.html">Calender</a></li>
+                <li><a href="event_calender_new.html">Calendar</a></li>
                 <li><a href="scoreboard.html">Scoreboard</a></li>
                 <li><a href="contact_us.html">Contact Us</a></li>
             </ul>
@@ -98,6 +110,16 @@
 
         <!-- Create Aside containing Twitter Feed from Eagle Dynamics -->
         <aside>
+            <p><br></p>
+            <article style="margin-top: 10px;" class="article1">
+                <div style="float: left; padding: 5px;">
+                    <img src="images/Messer109.jpg" alt="Messer" style="width: 150px; height: 150px;">
+                </div>
+                    <div>
+                        <h3 style="text-align: left;">New Member: Alehandro!</h3>
+                        <p style="text-align: left;">Everyone make sure to give him a warm welcome to the society! Be sure to say Hi!</p>
+                    </div>
+            </article>
             <h3>Latest Tweets</h3>
                 <div style="margin: auto; width: 50%; padding-top: 10px;">
                     <a class="twitter-timeline" data-height="700" href="https://twitter.com/eagledynamics?ref_src=twsrc%5Etfw">Tweets by eagledynamics</a> <script async src="https://platform.twitter.com/widgets.js"></script>
@@ -106,7 +128,7 @@
 
         <!-- Footer containing copyright-->
         <footer>
-            Copyright Alex Carnegie
+            Copyright Alex Carnegie 2023
         </footer>
     </body>
 </html>

@@ -11,6 +11,33 @@
             table tr:hover {
                 background-color: #4BA2CF;
             }
+
+            table th {
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            .headings {
+                background-color: #0060AA;
+                color: white;
+            }
+
+            table td {
+                width: 12.5%;
+                font-size: 10pt;
+                padding: 5px;
+                vertical-align: middle;
+            }
+
+            fieldset div {
+                margin-bottom: 10px;
+            }
+
+            fieldset label {
+                display: inline-block;
+                width: 8em;
+                text-align: left;
+            }
         </style>
     </head>
 
@@ -28,7 +55,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="current_members.html">Roster</a></li>
                 <li><a href="img_gallery.html">Gallery</a></li>
-                <li class="active"><a href="event_calender_new.html">Calender</a></li>
+                <li class="active"><a href="event_calender_new.html">Calendar</a></li>
                 <li><a href="scoreboard.html">Scoreboard</a></li>
                 <li><a href="contact_us.html">Contact Us</a></li>
             </ul>
@@ -37,9 +64,9 @@
         <main>
             <!-- Define Event Calander Table -->
             <div>
-                <table class="table table-striped table-hover table-bordered">
+                <table class="table table-striped table-hover table-bordered" style="margin-right: 10px;">
                     <thead>
-                        <tr>
+                        <tr class="headings">
                             <!-- Define Headings (incl Days of the Week) -->
                             <th scope="col">#</th>
                             <th scope="col">Monday</th>
@@ -164,10 +191,44 @@
                     </tbody>
                 </table>
             </div>
+
+            <div style="padding: 5px; margin: 10px; border: solid gray 1px;">
+                <p>Want to recommend an event? Tell us below!</p>
+
+                <form name="events">
+                    <fieldset>
+                        <div>
+                            <label id="eventTitleF" for="eventTitle">Event Title: </label>
+                            <input id="eventTitle" type="text" name="event_title" value="" aria-labelledby="eventTitleF"> <br>
+                        </div>
+                        <div>
+                            <label id="eventDateF" for="eventDate">Event Date: </label>
+                            <input id="eventDate" type="text" name="event_date" value="" aria-labelledby="eventDateF"> <br>
+                        </div>
+                        <div>
+                            <button type="button" onclick='submit_event()'>Submit</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
         </main>
 
-
+        <script>
+            function submit_event() {
+                var title = document.forms["events"]["event_title"].value;
+                var date = document.forms["events"]["event_date"].value;
+                if (title == "") {
+                    alert("An event must have a title!");
+                } else {
+                    if (date.length == 0) {
+                        alert("An event must have a date!");
+                    } else {
+                        alert("Event submitted! The society will contact you soon!");
+                    }
+                }
+            }
+        </script>
     </body>
 
-    <footer>Copyright Alex Carnegie</footer>
+    <footer>Copyright Alex Carnegie 2023</footer>
 </html>

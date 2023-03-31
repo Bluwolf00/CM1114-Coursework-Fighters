@@ -2,14 +2,31 @@
 
 var counter = 2;
 function login1() {
-    if (counter % 2 == 0) {
-        document.getElementById("loginB").innerHTML = "Log Out";
-        alert('You have been logged in!');
+
+    var email = document.forms["login"]["email"].value;
+    var password = document.forms["login"]["password"].value;
+
+    if (email == "") {
+        alert("Please provide an email");
     } else {
-        document.getElementById("loginB").innerHTML = "Log In";
-        alert('You have been logged out!');
+        if (password == "") {
+            alert("Please provide a password");
+        } else {
+            if (counter % 2 == 0) {
+                document.getElementById("emailF").disabled = true;
+                document.getElementById("passwordF").disabled = true;
+                document.getElementById("loginB").innerHTML = "Log Out";
+                alert('You have been logged in!');
+            } else {
+                document.getElementById("emailF").disabled = false;
+                document.getElementById("passwordF").disabled = false;
+                document.getElementById("loginB").innerHTML = "Log In";
+                alert('You have been logged out!');
+            }
+            counter += 1;
+        }
     }
-    counter += 1;
+
 }
 
 /* Function for prompting user that form has been submitted */
