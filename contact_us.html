@@ -39,9 +39,9 @@
                 <li><a href="current_members.html">Roster</a></li>
                 <li><a href="img_gallery.html">Gallery</a></li>
                 <li><a href="event_calender_new.html">Calendar</a></li>
+                <li><a href="wiki.html">Aircraft</a></li>
                 <li><a href="scoreboard.html">Scoreboard</a></li>
-                <li><a href="scoreboard.html">Test Page 1</a></li>
-                <li><a href="scoreboard.html">Test Page 2</a></li>
+                <li><a href="artworkComp.html">Competition</a></li>
                 <li class="active"><a href="contact_us.html">Contact Us</a></li>
             </ul>
         </nav>
@@ -78,6 +78,10 @@
                                 <div>
                                     <label id="nonmemberField" for="nonmember">Non-Member:</label>
                                     <input id="nonmember" type="radio" name="nmemberType" value="" aria-labelledby="nonmemberField"> <br>
+                                </div>
+                                <div>
+                                    <label id="textField" for="message" style="vertical-align: top;">Message:</label>
+                                    <textarea id="message" type="text" name="messageF" aria-labelledby="textField" rows="4" cols="25"></textarea> <br>
                                 </div>
                                 <br>
                                 <button type="button" onclick='send_form("form_outcome", "The form was sent successfully!")'>Submit</button>

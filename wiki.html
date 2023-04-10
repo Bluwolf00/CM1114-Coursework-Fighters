@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Set title, import Bootstrap & Main css file -->
+        <title>Maverick Society</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/main.css">
+
+        <style>
+            main div {
+                padding: 5px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            div.left {
+                float: left;
+            }
+            div.right {
+                float: right;
+            }
+            img.BLU {
+                width: 350px;
+                border: 2px solid #004489;
+            }
+            img.RED {
+                width: 350px;
+                border: 2px solid rgb(150, 0, 0);
+            }
+            div.wikielementL {
+                margin-bottom: 20px;
+                text-align: left;
+                border-bottom: 2px dashed #4BA2CF;
+            }
+            div.wikielementR {
+                margin-bottom: 20px;
+                text-align: right;
+                border-bottom: 2px dashed #4BA2CF;
+            }
+        </style>
+
+        <script>
+            function onImageHover(id) {
+                var element = document.getElementById(id);
+                element.style.borderWidth = "5px";
+            }
+            function onImageOut(id) {
+                var element = document.getElementById(id);
+                element.style.borderWidth = "2px";
+            }
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <!-- Website Logo & Webpage Title -->
+            <img src="images/Symbol2.png" alt="Logo" id="logo">
+            <h1>The Maverick Society</h1>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="current_members.html">Roster</a></li>
+                <li><a href="img_gallery.html">Gallery</a></li>
+                <li><a href="event_calender_new.html">Calendar</a></li>
+                <li class="active"><a href="wiki.html">Aircraft</a></li>
+                <li><a href="scoreboard.html">Scoreboard</a></li>
+                <li><a href="artworkComp.html">Competition</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div style="text-align: center;">
+                <h1>Aircraft Wiki</h1>
+                <h3>Here you will find some basic details about certain types of aircraft</h3>
+            </div>
+            <div class="wikielementL" style="border-top: #4BA2CF dashed 2px; padding-top: 20px;">
+                <div class="left">
+                    <img id="wikiElement1" src="images/F-16_June_2008.jpg" alt="F-16" class="BLU" onmouseover="onImageHover('wikiElement1')" onmouseout="onImageOut('wikiElement1')">
+                </div>
+                <div style="text-align: left;">
+                    <h3>F-16 Fighting Falcon</h3>
+                    <p><b>Main Role:</b> Air Superiority Fighter</p>
+                    <p><b>Country of Origin:</b> United States of America</p>
+                    <p><b>Propulsion:</b> Single Engine - Rated at 106kN of thrust</p>
+                    <p><b>Introduced:</b> August 1978</p>
+                    <p><b>Status:</b> In Active Service</p>
+                </div>
+            </div>
+            <div class="wikielementR">
+                <div style="text-align: right; float: right;">
+                    <img id="wikiElement2" src="images/FA-18.jpg" alt="F/A-18" class="BLU" onmouseover="onImageHover('wikiElement2')" onmouseout="onImageOut('wikiElement2')">
+                </div>
+                <div style="text-align: right;">
+                    <h3>F/A-18 Hornet</h3>
+                    <p><b>Main Role:</b> General Purpose Aircraft</p>
+                    <p><b>Country of Origin:</b> United States of America</p>
+                    <p><b>Propulsion:</b> Twin Engine - Rated at 100kN of thrust (156kN with afterburner)</p>
+                    <p><b>Introduced:</b> January 1983</p>
+                    <p><b>Status:</b> In Active Service</p>
+                </div>
+            </div>
+            <div class="wikielementL">
+                <div style="float: left;">
+                    <img id="wikiElement3" src="images/F-14Tomcat.jpg" alt="F-14" class="BLU" onmouseover="onImageHover('wikiElement3')" onmouseout="onImageOut('wikiElement3')">
+                </div>
+                <div style="text-align: left;">
+                    <h3>F-14 Tomcat</h3>
+                    <p><b>Main Role:</b> Air Superiority Fighter</p>
+                    <p><b>Country of Origin:</b> United States of America</p>
+                    <p><b>Propulsion:</b> Twin Engine - Rated at 104kN of thrust (134kN with afterburner)</p>
+                    <p><b>Introduced:</b> September 1974</p>
+                    <p><b>Status:</b> Retired - September 2006</p>
+                </div>
+            </div>
+            <div class="wikielementR">
+                <div style="float: right;">
+                    <img id="wikiElement4" src="images/Mig27.jpg" alt="Mig-27" class="RED" onmouseover="onImageHover('wikiElement4')" onmouseout="onImageOut('wikiElement4')">
+                </div>
+                <div style="text-align: right;">
+                    <h3>Mig-27 Flogger</h3>
+                    <p><b>Main Role:</b> Ground-Attack Aircraft</p>
+                    <p><b>Country of Origin:</b> Soviet Union (historical)</p>
+                    <p><b>Propulsion:</b> Single Engine - Rated at 78kN of thrust (112kN with afterburner)</p>
+                    <p><b>Introduced:</b> 1975</p>
+                    <p><b>Status:</b> Retired - 1993 (Russia) - 2019 (India) | In Active Service (Kazakh)</p>
+                </div>
+            </div>
+            <div class="wikielementL">
+                <div style="float: left;">
+                    <img id="wikiElement5" src="images/Su33.jpg" alt="Su-33" class="RED" onmouseover="onImageHover('wikiElement5')" onmouseout="onImageOut('wikiElement5')">
+                </div>
+                <div style="text-align: left;">
+                    <h3>Su-33 Flanker</h3>
+                    <p><b>Main Role:</b> Air Superiority Fighter</p>
+                    <p><b>Country of Origin:</b> Soviet Union (historical)</p>
+                    <p><b>Propulsion:</b> Twin Engine - Rated at 74kN of thrust each (125kN each with afterburner)</p>
+                    <p><b>Introduced:</b> August 1998</p>
+                    <p><b>Status:</b> In Active Service</p>
+                </div>
+            </div>
+            <div class="wikielementR">
+                <div style="float: right;">
+                    <img id="wikiElement6" src="images/Mig35.jpg" alt="Mig-35" class="RED" onmouseover="onImageHover('wikiElement6')" onmouseout="onImageOut('wikiElement6')">
+                </div>
+                <div style="text-align: right;">
+                    <h3>Mig-35 Fulcrum</h3>
+                    <p><b>Main Role:</b> General Purpose Aircraft</p>
+                    <p><b>Country of Origin:</b> Russian Federation</p>
+                    <p><b>Propulsion:</b> Twin Engine - Rated at 52kN of thrust each (88kN each with afterburner)</p>
+                    <p><b>Introduced:</b> June 2019</p>
+                    <p><b>Status:</b> In Active Service</p>
+                </div>
+            </div>
+        </main>
+
+    </body>
+
+    <footer>Copyright Alex Carnegie 2023</footer>
+</html>

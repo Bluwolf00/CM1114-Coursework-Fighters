@@ -34,7 +34,9 @@
                 <li><a href="current_members.html">Roster</a></li>
                 <li class="active"><a href="img_gallery.html">Gallery</a></li>
                 <li><a href="event_calender_new.html">Calendar</a></li>
+                <li><a href="wiki.html">Aircraft</a></li>
                 <li><a href="scoreboard.html">Scoreboard</a></li>
+                <li><a href="artworkComp.html">Competition</a></li>
                 <li><a href="contact_us.html">Contact Us</a></li>
             </ul>
         </nav>
@@ -62,6 +64,17 @@
                     </div>
                     <div class="col-sm">
                         <img id="img-gal-6" src="images/Mig27.jpg" alt="Mig-27 Flogger" class="gallery-img">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <img id="img-gal-7" src="images/F-35A.jpg" alt="F-35A" class="gallery-img">
+                    </div>
+                    <div class="col-sm">
+                        <img id="img-gal-8" src="images/Messer109.jpg" alt="Messerschmitt 109" class="gallery-img">
+                    </div>
+                    <div class="col-sm">
+                        <img id="img-gal-9" src="images/Spitfire.jpg" alt="Spitfire" class="gallery-img">
                     </div>
                 </div>
             </div>
@@ -109,6 +122,24 @@
             function highlight6() {
                 document.getElementById("img-gal-6").style="border: solid blue 2px;"
             }
+            function delight7() {
+                document.getElementById("img-gal-7").style="border: none;"
+            }
+            function highlight7() {
+                document.getElementById("img-gal-7").style="border: solid blue 2px;"
+            }
+            function delight8() {
+                document.getElementById("img-gal-8").style="border: none;"
+            }
+            function highlight8() {
+                document.getElementById("img-gal-8").style="border: solid blue 2px;"
+            }
+            function delight9() {
+                document.getElementById("img-gal-9").style="border: none;"
+            }
+            function highlight9() {
+                document.getElementById("img-gal-9").style="border: solid blue 2px;"
+            }
             
             document.getElementById("img-gal-1").addEventListener("mouseout", delight);
             document.getElementById("img-gal-1").addEventListener("mouseover", highlight);
@@ -127,6 +158,15 @@
 
             document.getElementById("img-gal-6").addEventListener("mouseout", delight6);
             document.getElementById("img-gal-6").addEventListener("mouseover", highlight6);
+
+            document.getElementById("img-gal-7").addEventListener("mouseout", delight7);
+            document.getElementById("img-gal-7").addEventListener("mouseover", highlight7);
+            
+            document.getElementById("img-gal-8").addEventListener("mouseout", delight8);
+            document.getElementById("img-gal-8").addEventListener("mouseover", highlight8);
+
+            document.getElementById("img-gal-9").addEventListener("mouseout", delight9);
+            document.getElementById("img-gal-9").addEventListener("mouseover", highlight9);
 
         </script>
     </body>
