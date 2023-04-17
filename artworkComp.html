@@ -24,6 +24,7 @@
             }
         </style>
 
+        <!-- Define scrollToBanner function, scrolls the screen so that the center of the carousel image is in the center of the screen -->
         <script>
             function scrollToBanner(id) {
                 var element = document.getElementById(id);
@@ -54,11 +55,13 @@
         </nav>
 
         <main>
+            <!-- Head caption naming the page and competition details -->
             <div style="text-align: center;">
                 <h1>2023 Q1 Artwork Competition</h1>
                 <h3>Current Status: Closed - Results Released: March 23rd</h3>
             </div>
 
+            <!-- Carousel that displays the top 4 entries sent in -->
             <div id="home-carousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -69,6 +72,7 @@
                 
                 <div class="carousel-inner">
                     <div class="carousel-item active">
+                        <!-- Due to the images being quite large, a javascript function named scrollToBanner will set the center of the screen to the center of the image when the user clicks on it -->
                         <img id="carousel-main" src="images/Art1New.jpg" class="d-block w-100" alt="First place artwork" onclick="scrollToBanner('carousel-main')">
                         <div class="carousel-caption d-none d-md-block">
                             <h3 class="carousel-headcaptions">First Prize</h3>
@@ -101,6 +105,7 @@
                     </div>
                 </div>
 
+                <!-- Carousel Buttons -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#home-carousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -111,6 +116,7 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+
             <div style="margin-top: 20px;">
                 <h5>Thank you everyone for participating this semester! We've seen some really great artwork this time around.</h5>
                 <h5>Hope to see you all next semester!</h5>
@@ -118,5 +124,6 @@
         </main>
     </body>
 
+    <!-- Footer containing copyright-->
     <footer>Copyright Alex Carnegie 2023</footer>
 </html>
